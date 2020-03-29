@@ -10,6 +10,7 @@ Group:		Libraries
 Source0:	https://github.com/richgel999/lzham_codec/archive/v%{tagver}/lzham_codec-%{tagver}.tar.gz
 # Source0-md5:	68ec3db42d2263d7e79d0581293f946d
 Patch0:		%{name}-includedir.patch
+Patch1:		%{name}-x32.patch
 URL:		https://github.com/richgel999/lzham_codec
 BuildRequires:	cmake >= 2.8
 BuildRequires:	libstdc++-devel
@@ -42,6 +43,7 @@ Pliki nagłówkowe bibliotek LZHAM.
 %prep
 %setup -q -n lzham_codec-%{tagver}
 %patch0 -p1
+%patch1 -p1
 
 %build
 install -d build

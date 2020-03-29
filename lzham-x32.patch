@@ -1,0 +1,12 @@
+Rely just on _LP64/__LP64__ to detect 64-bit ABI of x86_64 (which could also use ILP32)
+--- lzham_codec-1_0_stable1/lzhamdecomp/lzham_core.h.orig	2015-02-08 04:12:39.000000000 +0100
++++ lzham_codec-1_0_stable1/lzhamdecomp/lzham_core.h	2020-03-29 12:03:51.291820348 +0200
+@@ -169,7 +169,7 @@
+    // --- Generic GCC/clang path for x86/x64, clang or GCC, Linux, OSX, FreeBSD or NetBSD, pthreads for threading, GCC built-ins for atomic ops.
+    #define LZHAM_PLATFORM_PC 1
+ 
+-   #if defined(_LP64) || defined(__LP64__) || defined(__x86_64__)
++   #if defined(_LP64) || defined(__LP64__)
+       // 64-bit build assumes pointers are always 64-bit
+       #define LZHAM_PLATFORM_PC_X64 1
+       #define LZHAM_64BIT_POINTERS 1
