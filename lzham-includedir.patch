@@ -1,0 +1,8 @@
+--- lzham_codec-1_0_stable1/CMakeLists.txt.orig	2015-02-08 04:12:39.000000000 +0100
++++ lzham_codec-1_0_stable1/CMakeLists.txt	2020-03-29 09:24:13.669194837 +0200
+@@ -13,4 +13,4 @@
+               include/lzham.h
+               include/lzham_static_lib.h
+               include/zlib.h
+-              DESTINATION include)
++              DESTINATION include/lzham)
