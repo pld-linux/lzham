@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	LZHAM - kodek bezstratnej kompresji danych
 Name:		lzham
 Version:	1.0.stable1
 %define	tagver	%(echo %{version} | tr . _)
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/richgel999/lzham_codec/releases
